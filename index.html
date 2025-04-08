@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AntonMarquise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f6f1eb url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #c8a77b;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+    }
+    nav {
+      background-color: #b18d6b;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label, input, textarea {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #8c6849;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AntonMarquise</h1>
+    <p>Handmade with love. Clothes for a cause.</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#journal">Journal</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#request">Request</a>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m Anton Marquise. I sew by hand. I wear what I make. And sometimes, when people ask, I make something for them too — not for money, but for something better: a donation to a cause you care about.</p>
+    </section>
+
+    <section id="journal">
+      <h2>Journal</h2>
+      <p>Coming soon: thoughts, ideas, sketches, and stories behind the thread.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200x250.png?text=Piece+1" alt="Piece 1" />
+        <img src="https://via.placeholder.com/200x250.png?text=Piece+2" alt="Piece 2" />
+        <img src="https://via.placeholder.com/200x250.png?text=Piece+3" alt="Piece 3" />
+      </div>
+    </section>
+
+    <section id="request">
+      <h2>Request a Piece</h2>
+      <p>If you saw something you liked and want something similar, fill out the form below. Include a short note on your donation — what cause, how much, and how it matters to you.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="request">What piece do you want?</label>
+        <textarea name="request" id="request" rows="5" required></textarea>
+
+        <label for="donation">Link or description of your donation</label>
+        <textarea name="donation" id="donation" rows="3"></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
